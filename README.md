@@ -36,8 +36,8 @@ Host *
 ### Microsoft Windows, for all users
 
 ```cmd
-curl -LSso C:\ProgramData\ssh\ssh_config.d\aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/BuildBots/ssh_config"
-curl -LSso C:\ProgramData\ssh\ssh_known_hosts.d\aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/BuildBots/ssh_known_hosts"
+curl.exe -LSso C:\ProgramData\ssh\ssh_config.d\aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/BuildBots/ssh_config"
+curl.exe -LSso C:\ProgramData\ssh\ssh_known_hosts.d\aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/BuildBots/ssh_known_hosts"
 ```
 
 Then add the following lines to `C:\ProgramData\ssh\ssh_config`:
