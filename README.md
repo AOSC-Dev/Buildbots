@@ -31,5 +31,5 @@ Then add the following lines to `/etc/ssh/ssh_config`:
 
 ```properties
 Host *
-  Include config.d/*
+  Include ssh_config.d/*
 ```
