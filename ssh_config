@@ -1,0 +1,36 @@
+Host Ry3950X
+    HostName relay.aosc.io
+    Port 22333
+    User root
+Host Resonance
+    HostName relay.aosc.io
+    Port 23541
+    User root
+Host lemote-a1901
+    HostName relay.aosc.io
+    Port 23869
+    User root
+Host Mio
+    HostName relay.aosc.io
+    Port 24242
+    User root
+Host kp920
+    HostName relay.aosc.io
+    Port 24426
+    User root
+Host JellyXavier
+    HostName relay.aosc.io
+    Port 24444
+    User root
+Host powernv
+    HostName relay.aosc.io
+    Port 25202
+    User root
+Host SiFarce
+    HostName relay.aosc.io
+    Port 26002
+    User root
+Host Yukoaioi
+    HostName relay.aosc.io
+    Port 27001
+    User root
