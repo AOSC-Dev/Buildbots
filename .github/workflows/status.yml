@@ -1,0 +1,21 @@
+name: Status
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        port: [ 22333, 23541, 23869, 24242, 24426, 24444, 25202, 26002, 27001 ]
+      fail-fast: false
+
+    steps:
+      - name: Check the status of buildbots
+        env:
+          PORT: ${{matrix.port}}
+        run: ssh-keyscan -p ${{env.PORT}} relay.aosc.io
