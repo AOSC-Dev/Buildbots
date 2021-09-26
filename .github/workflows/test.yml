@@ -22,6 +22,7 @@ jobs:
       - name: Find all buildbots which have new or different keys from those in the sorted file ssh_known_hosts.old
         working-directory: ${{env.GITHUB_WORKSPACE}}
         run: |
+          set +e
           ssh-keyscan -p 22333 relay.aosc.io > ssh_known_hosts.new
           ssh-keyscan -p 23541 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 23869 relay.aosc.io >> ssh_known_hosts.new
@@ -32,6 +33,7 @@ jobs:
           ssh-keyscan -p 26002 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 27001 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan repo.aosc.io >> ssh_known_hosts.new
+          set -e
           
           sed -i 's/#.*$//;/^$/d' ssh_known_hosts
           sort -u ssh_known_hosts > ssh_known_hosts.old
