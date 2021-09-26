@@ -1,0 +1,38 @@
+name: Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # https://man.openbsd.org/ssh-keyscan.1
+      - name: Find all buildbots which have new or different keys from those in the sorted file ssh_known_hosts.old
+        working-directory: ${{env.GITHUB_WORKSPACE}}
+        run: |
+          ssh-keyscan -p 22333 relay.aosc.io > ssh_known_hosts.new
+          ssh-keyscan -p 23541 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 23869 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 24242 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 24426 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 24444 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 25202 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 26002 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 27001 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan repo.aosc.io >> ssh_known_hosts.new
+          
+          sed -i 's/#.*$//;/^$/d' ssh_known_hosts
+          sort -u ssh_known_hosts > ssh_known_hosts.old
+          sort -u ssh_known_hosts.new ssh_known_hosts.old | diff -s ssh_known_hosts.old -
