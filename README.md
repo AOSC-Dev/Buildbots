@@ -7,8 +7,8 @@ Buildbots that can be used by AOSC developers. This repo contains [`ssh_config`]
 ### All operating systems, for current user
 
 ```bash
-curl -LSso ~/.ssh/config.d/aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/BuildBots/ssh_config"
-curl -LSso ~/.ssh/known_hosts.d/aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/BuildBots/ssh_known_hosts"
+curl -LSso ~/.ssh/config.d/aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/Buildbots/ssh_config"
+curl -LSso ~/.ssh/known_hosts.d/aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/Buildbots/ssh_known_hosts"
 ```
 
 Then add the following lines to `~/.ssh/config`:
@@ -21,8 +21,8 @@ Host *
 ### UNIX and Unix-like operating systems, for all users
 
 ```bash
-curl -LSso /etc/ssh/ssh_config.d/aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/BuildBots/ssh_config"
-curl -LSso /etc/ssh/ssh_known_hosts.d/aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/BuildBots/ssh_known_hosts"
+curl -LSso /etc/ssh/ssh_config.d/aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/Buildbots/ssh_config"
+curl -LSso /etc/ssh/ssh_known_hosts.d/aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/Buildbots/ssh_known_hosts"
 chmod 755 /etc/ssh/ssh_config.d /etc/ssh/ssh_known_hosts.d
 ```
 
@@ -36,8 +36,8 @@ Host *
 ### Microsoft Windows, for all users
 
 ```cmd
-curl.exe -LSso C:\ProgramData\ssh\ssh_config.d\aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/BuildBots/ssh_config"
-curl.exe -LSso C:\ProgramData\ssh\ssh_known_hosts.d\aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/BuildBots/ssh_known_hosts"
+curl.exe -LSso C:\ProgramData\ssh\ssh_config.d\aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/Buildbots/ssh_config"
+curl.exe -LSso C:\ProgramData\ssh\ssh_known_hosts.d\aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/Buildbots/ssh_known_hosts"
 ```
 
 Then add the following lines to `C:\ProgramData\ssh\ssh_config`:
