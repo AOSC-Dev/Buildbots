@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        port: [ 22333, 23541, 24242, 24426, 24444, 25202, 26002, 27001 ]
+        port: [ 22, 22333, 23541, 24242, 24426, 24444, 25202, 26002, 27001 ]
       fail-fast: false
 
     steps:
