@@ -18,4 +18,4 @@ jobs:
       - name: Check the status of buildbots
         env:
           PORT: ${{matrix.port}}
-        run: ssh-keyscan -p ${{env.PORT}} relay.aosc.io
+        run: ssh-keyscan -p $PORT relay.aosc.io
