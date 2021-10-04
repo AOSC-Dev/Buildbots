@@ -20,7 +20,6 @@ jobs:
 
       # https://man.openbsd.org/ssh-keyscan.1
       - name: Find all buildbots which have new or different keys from those in the sorted file ssh_known_hosts.old
-        working-directory: ${{env.GITHUB_WORKSPACE}}
         run: |
           set +e
           ssh-keyscan -p 22333 relay.aosc.io > ssh_known_hosts.new
