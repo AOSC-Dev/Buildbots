@@ -1,6 +1,7 @@
 # Buildbots
 
 [![Status](https://github.com/AOSC-Dev/Buildbots/actions/workflows/status.yml/badge.svg)](https://github.com/AOSC-Dev/Buildbots/actions/workflows/status.yml)
+[![Test](https://github.com/AOSC-Dev/Buildbots/actions/workflows/test.yml/badge.svg)](https://github.com/AOSC-Dev/Buildbots/actions/workflows/test.yml)
 
 Collection of buildbot configurations for AOSC OS maintainers. This repo contains [`ssh_config`](https://man.openbsd.org/ssh_config) and [`ssh_known_hosts`](https://man.openbsd.org/sshd.8#SSH_KNOWN_HOSTS_FILE_FORMAT) files of them, for developers' convenience. Repo server's SSH key fingerprints are also included in `ssh_known_hosts`.
 
