@@ -12,7 +12,8 @@ Collection of buildbot configurations for AOSC OS maintainers. This repo contain
 ```bash
 curl -LSso ~/.ssh/config.d/aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/Buildbots/ssh_config"
 curl -LSso ~/.ssh/known_hosts.d/aosc --create-dirs "https://cdn.jsdelivr.net/gh/AOSC-Dev/Buildbots/ssh_known_hosts"
-chmod 644 ~/.ssh/config.d/aosc
+# For UNIX and Unix-like operating systems, set strict permissions on ssh_config file
+# chmod 644 ~/.ssh/config.d/aosc
 ```
 
 Then add the following lines to `~/.ssh/config`:
