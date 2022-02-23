@@ -12,7 +12,7 @@ jobs:
     continue-on-error: ${{matrix.experimental}}
     strategy:
       matrix:
-        port: [22, 22333, 23541, 24222, 24242, 24426, 24444, 24808, 25202, 26002]
+        port: [22, 22333, 23541, 24222, 24242, 24426, 24444, 24808, 25202, 26002, 26022]
         experimental: [false]
         include:
           - port: 27001
