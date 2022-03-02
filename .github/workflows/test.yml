@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       # https://man.openbsd.org/ssh-keyscan.1
       - name: Find all buildbots which have new or different keys from those in the sorted file ssh_known_hosts.old
