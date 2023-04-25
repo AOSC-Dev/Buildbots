@@ -9,14 +9,9 @@ on:
 jobs:
   status:
     runs-on: ubuntu-latest
-    continue-on-error: ${{matrix.experimental}}
     strategy:
       matrix:
-        port: [22, 22333, 23541, 24222, 24242, 24426, 24444, 24808, 25202, 26002, 26022]
-        experimental: [false]
-        include:
-          - port: 27001
-            experimental: true
+        port: [22, 22333, 23541, 23869, 24191, 24426, 24451, 24808, 26055, 26056, 26666, 28002, 28003]
       fail-fast: false
 
     steps:
