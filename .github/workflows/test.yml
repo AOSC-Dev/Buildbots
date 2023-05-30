@@ -33,6 +33,7 @@ jobs:
           ssh-keyscan -p 26055 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 26056 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 26666 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 27863 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 28002 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 28003 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan repo.aosc.io >> ssh_known_hosts.new
