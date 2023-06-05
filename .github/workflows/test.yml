@@ -27,7 +27,6 @@ jobs:
           ssh-keyscan -p 23869 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 24191 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 24426 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24451 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 24808 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 25202 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 26055 relay.aosc.io >> ssh_known_hosts.new
