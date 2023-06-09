@@ -18,10 +18,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # https://man.openbsd.org/ssh-keyscan.1
       - name: Find all buildbots which have new or different keys from those in the sorted file ssh_known_hosts.old
         run: |
           set +e
+          
           ssh-keyscan -p 22333 relay.aosc.io > ssh_known_hosts.new
           ssh-keyscan -p 23541 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 23869 relay.aosc.io >> ssh_known_hosts.new
@@ -35,7 +35,37 @@ jobs:
           ssh-keyscan -p 27863 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 28002 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 28003 relay.aosc.io >> ssh_known_hosts.new
+          
+          ssh-keyscan -p 22333 relay-inet.aosc.io > ssh_known_hosts.new
+          ssh-keyscan -p 23541 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 23869 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 24191 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 24426 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 24808 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 25202 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 26055 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 26056 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 26666 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 27863 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 28002 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 28003 relay-inet.aosc.io >> ssh_known_hosts.new
+          
+          ssh-keyscan -p 22333 relay-ipv6.aosc.io > ssh_known_hosts.new
+          ssh-keyscan -p 23541 relay-ipv6.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 23869 relay-ipv6.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 24191 relay-ipv6.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 24426 relay-ipv6.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 24808 relay-ipv6.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 25202 relay-ipv6.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 26055 relay-ipv6.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 26056 relay-ipv6.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 26666 relay-ipv6.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 27863 relay-ipv6.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 28002 relay-ipv6.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 28003 relay-ipv6.aosc.io >> ssh_known_hosts.new
+          
           ssh-keyscan repo.aosc.io >> ssh_known_hosts.new
+          
           set -e
           
           sed -i 's/#.*$//;/^$/d' ssh_known_hosts

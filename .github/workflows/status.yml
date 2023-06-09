@@ -12,10 +12,12 @@ jobs:
     strategy:
       matrix:
         port: [22, 22333, 23541, 23869, 24191, 24426, 24808, 25202, 26055, 26056, 26666, 27863, 28002, 28003]
+        host: ["relay.aosc.io", "relay-inet.aosc.io", "relay-ipv6.aosc.io"]
       fail-fast: false
 
     steps:
       - name: Check the status of buildbots
         env:
           PORT: ${{matrix.port}}
-        run: ssh-keyscan -p $PORT relay.aosc.io
+          HOST: ${{matrix.host}}
+        run: ssh-keyscan -p $PORT $HOST
