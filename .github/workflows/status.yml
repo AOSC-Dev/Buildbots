@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         port: [22, 22333, 23541, 23869, 24191, 24426, 24808, 25202, 26055, 26056, 26666, 27863, 28002, 28003]
-        host: ["relay.aosc.io", "relay-inet.aosc.io"]
+        host: ["relay.aosc.io", "relay-inet.aosc.io", "relay-cn.aosc.io"]
       fail-fast: false
 
     steps:
