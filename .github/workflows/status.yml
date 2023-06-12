@@ -20,4 +20,4 @@ jobs:
         env:
           PORT: ${{matrix.port}}
           HOST: ${{matrix.host}}
-        run: ssh-keyscan -p $PORT -T 60 $HOST
+        run: ssh-keyscan -p $PORT -T 240 $HOST
