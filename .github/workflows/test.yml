@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Find all buildbots which have new or different keys from those in the sorted file ssh_known_hosts.old
         run: |
