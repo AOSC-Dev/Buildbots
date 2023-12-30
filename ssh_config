@@ -78,6 +78,12 @@ Host Stomatopoda stomatopoda
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host VirtuaCambarus virtuacambarus
+  HostName relay.aosc.io
+  Port 27888
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Taple taple
   HostName relay.aosc.io
   Port 28002
@@ -168,6 +174,12 @@ Host MagmaCube-inet magmacube-inet
 Host Stomatopoda-inet stomatopoda-inet
   HostName relay-inet.aosc.io
   Port 27863
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host VirtuaCambarus-inet virtuacambarus-inet
+  HostName relay-inet.aosc.io
+  Port 27888
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -264,6 +276,12 @@ Host Stomatopoda-ipv6 stomatopoda-ipv6
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host VirtuaCambarus-ipv6 virtuacambarus-ipv6
+  HostName relay-ipv6.aosc.io
+  Port 27888
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Taple-ipv6 taple-ipv6
   HostName relay-ipv6.aosc.io
   Port 28002
@@ -357,6 +375,12 @@ Host Stomatopoda-cn stomatopoda-cn
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host VirtuaCambarus-cn virtuacambarus-cn
+  HostName relay-cn.aosc.io
+  Port 27888
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Taple-cn taple-cn
   HostName relay-cn.aosc.io
   Port 28002
@@ -447,6 +471,12 @@ Host MagmaCube-cn-ipv6 magmacube-cn-ipv6
 Host Stomatopoda-cn-ipv6 stomatopoda-cn-ipv6
   HostName relay-cn-ipv6.aosc.io
   Port 27863
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host VirtuaCambarus-cn-ipv6 virtuacambarus-cn-ipv6
+  HostName relay-cn-ipv6.aosc.io
+  Port 27888
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
