@@ -15,6 +15,7 @@ jobs:
         host: ["relay.aosc.io", "relay-inet.aosc.io", "relay-cn.aosc.io"]
         include:
           - port: 24514
+            host: ["relay.aosc.io", "relay-inet.aosc.io", "relay-cn.aosc.io"]
             experimental: true
       fail-fast: false
 
