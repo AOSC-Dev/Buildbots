@@ -11,8 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        port: [22, 22333, 23269, 23541, 24114, 24222, 24242, 24426, 24514, 24808, 25202, 26666, 26999, 27863, 27888, 28002, 28003]
+        port: [22, 22333, 23269, 23541, 24114, 24222, 24242, 24426, 24808, 25202, 26666, 26999, 27863, 27888, 28002, 28003]
         host: ["relay.aosc.io", "relay-inet.aosc.io", "relay-cn.aosc.io"]
+        include:
+          - port: 24514
+            experimental: true
       fail-fast: false
 
     steps:
