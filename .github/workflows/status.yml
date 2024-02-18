@@ -25,6 +25,15 @@ jobs:
           - port: 24514
             host: relay-cn.aosc.io
             experimental: true
+          - port: 26128
+            host: relay.aosc.io
+            experimental: true
+          - port: 26128
+            host: relay-inet.aosc.io
+            experimental: true
+          - port: 26128
+            host: relay-cn.aosc.io
+            experimental: true
       fail-fast: false
 
     steps:
