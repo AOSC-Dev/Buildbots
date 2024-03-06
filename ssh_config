@@ -1,5 +1,11 @@
 # relay
 
+Host towards-modern-distro
+  HostName relay.aosc.io
+  Port 22162
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Yerus yerus
   HostName relay.aosc.io
   Port 22333
@@ -111,6 +117,12 @@ Host PorterAlePro porteralepro
 
 # relay-inet
 
+Host towards-modern-distro-inet
+  HostName relay-inet.aosc.io
+  Port 22162
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Yerus-inet yerus-inet
   HostName relay-inet.aosc.io
   Port 22333
@@ -222,6 +234,12 @@ Host PorterAlePro-inet porteralepro-inet
 
 # relay-ipv6
 
+Host towards-modern-distro-ipv6
+  HostName relay-ipv6.aosc.io
+  Port 22162
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Yerus-ipv6 yerus-ipv6
   HostName relay-ipv6.aosc.io
   Port 22333
@@ -333,6 +351,12 @@ Host PorterAlePro-ipv6 porteralepro-ipv6
 
 # relay-cn
 
+Host towards-modern-distro-cn
+  HostName relay-cn.aosc.io
+  Port 22162
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Yerus-cn yerus-cn
   HostName relay-cn.aosc.io
   Port 22333
@@ -444,6 +468,12 @@ Host PorterAlePro-cn porteralepro-cn
 
 # relay-cn-ipv6
 
+Host towards-modern-distro-cn-ipv6
+  HostName relay-cn-ipv6.aosc.io
+  Port 22162
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Yerus-cn-ipv6 yerus-cn-ipv6
   HostName relay-cn-ipv6.aosc.io
   Port 22333
