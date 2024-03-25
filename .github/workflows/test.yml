@@ -44,6 +44,7 @@ jobs:
           ssh-keyscan -p 27863 -T 240 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 28002 -T 240 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 28003 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 28004 -T 240 relay.aosc.io >> ssh_known_hosts.new
           
           ssh-keyscan -p 22162 -T 240 relay-inet.aosc.io > ssh_known_hosts.new
           ssh-keyscan -p 22333 -T 240 relay-inet.aosc.io > ssh_known_hosts.new
@@ -67,6 +68,7 @@ jobs:
           ssh-keyscan -p 27863 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 28002 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 28003 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -p 28004 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
           
           ssh-keyscan -p 22162 -T 240 relay-cn.aosc.io > ssh_known_hosts.new
           ssh-keyscan -p 22333 -T 240 relay-cn.aosc.io > ssh_known_hosts.new
@@ -90,7 +92,13 @@ jobs:
           ssh-keyscan -p 27863 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 28002 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -p 28003 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          
+          ssh-keyscan -p 28004 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+
+          ssh-keyscan -4 -p 23541 home.biscuit.moe >> ssh_known_hosts.new
+          ssh-keyscan -4 -p 2223 kp920.ip4.run >> ssh_known_hosts.new
+          ssh-keyscan -p 8022 nas.xinmu.moe >> ssh_known_hosts.new
+          ssh-keyscan -p 2222 211.137.78.121 >> ssh_known_hosts.new
+
           ssh-keyscan repo.aosc.io >> ssh_known_hosts.new
           ssh-keyscan repo-cn.aosc.io >> ssh_known_hosts.new
           
