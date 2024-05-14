@@ -16,15 +16,6 @@ jobs:
         host: ["relay.aosc.io", "relay-inet.aosc.io", "relay-cn.aosc.io"]
         experimental: [false]
         include:
-          - port: 24514
-            host: relay.aosc.io
-            experimental: true
-          - port: 24514
-            host: relay-inet.aosc.io
-            experimental: true
-          - port: 24514
-            host: relay-cn.aosc.io
-            experimental: true
           - port: 26128
             host: relay.aosc.io
             experimental: true
