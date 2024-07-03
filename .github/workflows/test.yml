@@ -21,115 +21,115 @@ jobs:
       - name: Find all buildbots which have new or different keys from those in the sorted file ssh_known_hosts.old
         run: |
           set +e
-          
-          ssh-keyscan -p 22040 -T 240 relay.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22041 -T 240 relay.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22042 -T 240 relay.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22043 -T 240 relay.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22162 -T 240 relay.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22238 -T 240 relay.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22333 -T 240 relay.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 23269 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 23541 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24114 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24222 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24242 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24426 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24612 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24808 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 25202 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 25888 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 26128 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 26666 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 26999 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27001 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27221 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27224 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27282 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27514 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27777 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27863 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27888 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 28002 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 28003 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 28004 -T 240 relay.aosc.io >> ssh_known_hosts.new
-          
-          ssh-keyscan -p 22040 -T 240 relay-inet.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22041 -T 240 relay-inet.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22042 -T 240 relay-inet.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22043 -T 240 relay-inet.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22162 -T 240 relay-inet.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22238 -T 240 relay-inet.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22333 -T 240 relay-inet.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 23269 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 23541 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24114 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24222 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24242 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24426 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24612 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24808 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 25202 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 25888 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 26128 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 26666 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 26999 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27001 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27221 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27224 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27282 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27514 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27777 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27863 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27888 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 28002 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 28003 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 28004 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
-          
-          ssh-keyscan -p 22040 -T 240 relay-cn.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22041 -T 240 relay-cn.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22042 -T 240 relay-cn.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22043 -T 240 relay-cn.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22162 -T 240 relay-cn.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22238 -T 240 relay-cn.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 22333 -T 240 relay-cn.aosc.io > ssh_known_hosts.new
-          ssh-keyscan -p 23269 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 23541 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24114 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24222 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24242 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24426 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24612 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 24808 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 25202 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 25888 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 26128 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 26666 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 26999 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27001 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27221 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27224 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27282 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27514 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27777 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27863 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 27888 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 28002 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 28003 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan -p 28004 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
 
-          ssh-keyscan -4 -p 23541 home.biscuit.moe >> ssh_known_hosts.new
-          ssh-keyscan -4 -p 2223 kp920.ip4.run >> ssh_known_hosts.new
-          ssh-keyscan -p 8022 nas.xinmu.moe >> ssh_known_hosts.new
-          ssh-keyscan -p 2222 211.137.78.121 >> ssh_known_hosts.new
+          ssh-keyscan -qp 22040 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22040 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22041 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22041 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22042 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22042 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22043 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22043 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22162 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22162 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22238 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22238 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22333 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22333 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 23269 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 23269 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 23541 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 23541 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24114 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24114 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24222 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24222 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24242 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24242 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24426 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24426 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24612 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24612 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24808 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24808 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 25202 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 25202 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 25888 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 25888 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 26128 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 26128 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 26666 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 26666 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 26999 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 26999 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27001 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27001 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27221 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27221 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27224 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27224 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27282 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27282 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27514 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27514 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27777 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27777 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27863 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27863 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27888 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27888 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 28002 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 28002 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 28003 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 28003 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 28004 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 28004 -T 240 relay.aosc.io >> ssh_known_hosts.new
 
-          ssh-keyscan repo.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan repo-cn.aosc.io >> ssh_known_hosts.new
-          ssh-keyscan github.com >> ssh_known_hosts.new
-          ssh-keyscan ssh.github.com >> ssh_known_hosts.new
-          
+          ssh-keyscan -qp 22040 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22040 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22041 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22041 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22042 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22042 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22043 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22043 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22162 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22162 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22238 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22238 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22333 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22333 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 23269 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 23269 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 23541 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 23541 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24114 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24114 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24222 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24222 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24242 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24242 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24426 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24426 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24612 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24612 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24808 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24808 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 25202 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 25202 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 25888 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 25888 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 26128 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 26128 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 26666 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 26666 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 26999 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 26999 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27001 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27001 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27221 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27221 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27224 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27224 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27282 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27282 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27514 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27514 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27777 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27777 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27863 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27863 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27888 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27888 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 28002 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 28002 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 28003 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 28003 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 28004 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 28004 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+
+          ssh-keyscan -qp 22040 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22040 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22041 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22041 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22042 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22042 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22043 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22043 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22162 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22162 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22238 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22238 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 22333 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 22333 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 23269 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 23269 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 23541 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 23541 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24114 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24114 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24222 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24222 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24242 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24242 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24426 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24426 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24612 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24612 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24808 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24808 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 25202 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 25202 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 25888 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 25888 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 26128 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 26128 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 26666 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 26666 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 26999 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 26999 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27001 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27001 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27221 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27221 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27224 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27224 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27282 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27282 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27514 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27514 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27777 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27777 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27863 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27863 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 27888 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 27888 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 28002 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 28002 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 28003 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 28003 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 28004 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 28004 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+
+          ssh-keyscan -4qp 23541 home.biscuit.moe >> ssh_known_hosts.new || ssh-keyscan -4p 23541 home.biscuit.moe >> ssh_known_hosts.new
+          ssh-keyscan -4qp 2223 kp920.ip4.run >> ssh_known_hosts.new || ssh-keyscan -4p 2223 kp920.ip4.run >> ssh_known_hosts.new
+          ssh-keyscan -qp 8022 nas.xinmu.moe >> ssh_known_hosts.new || ssh-keyscan -p 8022 nas.xinmu.moe >> ssh_known_hosts.new
+          ssh-keyscan -qp 2222 211.137.78.121 >> ssh_known_hosts.new || ssh-keyscan -p 2222 211.137.78.121 >> ssh_known_hosts.new
+
+          ssh-keyscan -q repo.aosc.io >> ssh_known_hosts.new || ssh-keyscan repo.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -q repo-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan repo-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -q github.com >> ssh_known_hosts.new || ssh-keyscan github.com >> ssh_known_hosts.new
+          ssh-keyscan -q ssh.github.com >> ssh_known_hosts.new || ssh-keyscan ssh.github.com >> ssh_known_hosts.new
+
           set -e
-          
+
           sed -i 's/#.*$//;/^$/d' ssh_known_hosts
           sort -u ssh_known_hosts > ssh_known_hosts.old
           sort -u ssh_known_hosts.new ssh_known_hosts.old | diff -s ssh_known_hosts.old -
