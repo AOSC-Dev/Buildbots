@@ -204,12 +204,6 @@ Host PorterAlePro porteralepro
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host mieps
-  HostName relay.aosc.io
-  Port 28004
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 
 # relay-inet
 
