@@ -39,6 +39,7 @@ jobs:
           ssh-keyscan -qp 24114 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24114 -T 240 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24222 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24222 -T 240 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24242 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24242 -T 240 relay.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24410 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24410 -T 240 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24426 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24426 -T 240 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24612 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24612 -T 240 relay.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24808 -T 240 relay.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24808 -T 240 relay.aosc.io >> ssh_known_hosts.new
@@ -77,6 +78,7 @@ jobs:
           ssh-keyscan -qp 24114 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24114 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24222 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24222 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24242 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24242 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24410 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24410 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24426 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24426 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24612 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24612 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24808 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24808 -T 240 relay-inet.aosc.io >> ssh_known_hosts.new
@@ -114,6 +116,7 @@ jobs:
           ssh-keyscan -qp 24114 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24114 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24222 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24222 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24242 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24242 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
+          ssh-keyscan -qp 24410 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24410 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24426 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24426 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24612 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24612 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new
           ssh-keyscan -qp 24808 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new || ssh-keyscan -p 24808 -T 240 relay-cn.aosc.io >> ssh_known_hosts.new

@@ -102,6 +102,12 @@ Host Mio mio
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Dapen dapen
+  HostName relay.aosc.io
+  Port 24410
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host kp920
   HostName relay.aosc.io
   Port 24426
@@ -318,6 +324,12 @@ Host Zinfandel-inet zinfandel-inet
 Host Mio-inet mio-inet
   HostName relay-inet.aosc.io
   Port 24242
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Dapen-inet dapen-inet
+  HostName relay-inet.aosc.io
+  Port 24410
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -546,6 +558,12 @@ Host Mio-ipv6 mio-ipv6
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Dapen-ipv6 dapen-ipv6
+  HostName relay-ipv6.aosc.io
+  Port 24410
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host kp920-ipv6
   HostName relay-ipv6.aosc.io
   Port 24426
@@ -771,6 +789,12 @@ Host Mio-cn mio-cn
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Dapen-cn dapen-cn
+  HostName relay-cn.aosc.io
+  Port 24410
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host kp920-cn
   HostName relay-cn.aosc.io
   Port 24426
@@ -993,6 +1017,12 @@ Host Zinfandel-cn-ipv6 Zinfandel-cn-ipv6
 Host Mio-cn-ipv6 mio-cn-ipv6
   HostName relay-cn-ipv6.aosc.io
   Port 24242
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Dapen-cn-ipv6 dapen-cn-ipv6
+  HostName relay-cn-ipv6.aosc.io
+  Port 24410
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
