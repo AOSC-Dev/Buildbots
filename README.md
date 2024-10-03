@@ -5,7 +5,7 @@
 
 Collection of buildbot configurations for AOSC OS maintainers. This repo contains [`ssh_config`](https://man.openbsd.org/ssh_config) and [`ssh_known_hosts`](https://man.openbsd.org/sshd.8#SSH_KNOWN_HOSTS_FILE_FORMAT) files of them, for developers' convenience. Repo server's SSH key fingerprints are also included in `ssh_known_hosts`.
 
-There are two relay servers available, one in Washington (WA), one in Shanghai. But there are five IP addresses, each suitable for different network environments. Note that <text inside angle brackets> indicates placeholder for which you must supply a value.
+There are two relay servers available, one in Washington (WA), one in Shanghai. But there are five IP addresses, each suitable for different network environments. Note that `<text inside angle brackets>` indicates placeholder for which you must supply a value.
 
 - `relay.aosc.io`: IPv4 only, routed via [Microsoft global network](https://learn.microsoft.com/azure/networking/microsoft-global-network), **developers outside of China** should choose this. Connect to this server with `ssh <buildbot>`.
 - `relay-ipv6.aosc.io`: IPv6 only, routed via Microsoft global network, **developers outside of China with IPv6** should choose this. Connect to this server with `ssh <buildbot>-ipv6`.
