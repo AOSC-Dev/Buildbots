@@ -216,6 +216,12 @@ Host Cambarus cambarus loongarch64-Cambarus loongarch64-cambarus
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host YuanBao yuanbao loongarch64-YuanBao loongarch64-yuanbao
+  HostName relay.aosc.io
+  Port 27999
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Taple taple amd64-Taple amd64-taple
   HostName relay.aosc.io
   Port 28002
@@ -450,6 +456,12 @@ Host Stomatopoda-inet stomatopoda-inet loongarch64-Stomatopoda-inet loongarch64-
 Host Cambarus-inet cambarus-inet loongarch64-Cambarus-inet loongarch64-cambarus-inet
   HostName relay-inet.aosc.io
   Port 27888
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host YuanBao-inet yuanbao-inet loongarch64-YuanBao-inet loongarch64-yuanbao-inet
+  HostName relay-inet.aosc.io
+  Port 27999
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -690,6 +702,12 @@ Host Cambarus-ipv6 cambarus-ipv6 loongarch64-Cambarus-ipv6 loongarch64-cambarus-
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host YuanBao-ipv6 yuanbao-ipv6 loongarch64-YuanBao-ipv6 loongarch64-yuanbao-ipv6
+  HostName relay-ipv6.aosc.io
+  Port 27999
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Taple-ipv6 taple-ipv6 amd64-Taple-ipv6 amd64-taple-ipv6
   HostName relay-ipv6.aosc.io
   Port 28002
@@ -927,6 +945,12 @@ Host Cambarus-cn cambarus-cn loongarch64-Cambarus-cn loongarch64-cambarus-cn
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host YuanBao-cn yuanbao-cn loongarch64-YuanBao-cn loongarch64-yuanbao-cn
+  HostName relay-cn.aosc.io
+  Port 27999
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Taple-cn taple-cn amd64-Taple-cn amd64-taple-cn
   HostName relay-cn.aosc.io
   Port 28002
@@ -1161,6 +1185,12 @@ Host Stomatopoda-cn-ipv6 stomatopoda-cn-ipv6 loongarch64-Stomatopoda-cn-ipv6 loo
 Host Cambarus-cn-ipv6 cambarus-cn-ipv6 loongarch64-Cambarus-cn-ipv6 loongarch64-cambarus-cn-ipv6
   HostName relay-cn-ipv6.aosc.io
   Port 27888
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host YuanBao-cn-ipv6 yuanbao-cn-ipv6 loongarch64-YuanBao-cn-ipv6 loongarch64-yuanbao-cn-ipv6
+  HostName relay-cn-ipv6.aosc.io
+  Port 27999
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
