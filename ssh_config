@@ -582,7 +582,7 @@ Host Asta-ipv6 asta-ipv6 arm64-Asta-ipv6 arm64-asta-ipv6
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host Zinfandel-ipv6 Zinfandel-ipv6 arm64-Zinfandel-ipv6 arm64-Zinfandel-ipv6
+Host Zinfandel-ipv6 zinfandel-ipv6 arm64-Zinfandel-ipv6 arm64-zinfandel-ipv6
   HostName relay-ipv6.aosc.io
   Port 24222
   User root
@@ -825,7 +825,7 @@ Host Asta-cn asta-cn arm64-Asta-cn arm64-asta-cn
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host Zinfandel-cn Zinfandel-cn arm64-Zinfandel-cn arm64-Zinfandel-cn
+Host Zinfandel-cn zinfandel-cn arm64-Zinfandel-cn arm64-zinfandel-cn
   HostName relay-cn.aosc.io
   Port 24222
   User root
@@ -1068,7 +1068,7 @@ Host Asta-cn-ipv6 asta-cn-ipv6 arm64-Asta-cn-ipv6 arm64-asta-cn-ipv6
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host Zinfandel-cn-ipv6 Zinfandel-cn-ipv6 arm64-Zinfandel-cn-ipv6 arm64-Zinfandel-cn-ipv6
+Host Zinfandel-cn-ipv6 zinfandel-cn-ipv6 arm64-Zinfandel-cn-ipv6 arm64-zinfandel-cn-ipv6
   HostName relay-cn-ipv6.aosc.io
   Port 24222
   User root
