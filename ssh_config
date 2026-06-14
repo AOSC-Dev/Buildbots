@@ -24,18 +24,6 @@ Host Tatooine tatooine amd64-Tatooine amd64-tatooine
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host pika amd64-pika
-  HostName relay.aosc.io
-  Port 22076
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host towards-modern-distro amd64-towards-modern-distro
-  HostName relay.aosc.io
-  Port 22162
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Ricks-Ryzen-Box ricks-ryzen-box amd64-Ricks-Ryzen-Box amd64-ricks-ryzen-box
   HostName relay.aosc.io
   Port 22238
@@ -45,6 +33,12 @@ Host Ricks-Ryzen-Box ricks-ryzen-box amd64-Ricks-Ryzen-Box amd64-ricks-ryzen-box
 Host Yerus yerus amd64-Yerus amd64-yerus
   HostName relay.aosc.io
   Port 22333
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Kashyyyk kashyyyk amd64-Kashyyyk amd64-kashyyyk
+  HostName relay.aosc.io
+  Port 22341
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -72,27 +66,21 @@ Host Misaka23333 misaka23333 loongson3-Misaka23333 loongson3-misaka23333
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Anomalocaris anomalocaris loongson3-Anomalocaris loongson3-anomalocaris
+  HostName relay.aosc.io
+  Port 23464
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Resonance resonance loongson3-Resonance loongson3-resonance
   HostName relay.aosc.io
   Port 23541
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host ipason loongson3-ipason
-  HostName relay.aosc.io
-  Port 23669
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Catfish catfish arm64-Catfish arm64-catfish
   HostName relay.aosc.io
   Port 24114
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host Asta asta arm64-Asta arm64-asta
-  HostName relay.aosc.io
-  Port 24151
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -111,6 +99,12 @@ Host Mio mio arm64-Mio arm64-mio
 Host Dapen dapen arm64-Dapen arm64-dapen
   HostName relay.aosc.io
   Port 24410
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host benderblog-macmini arm64-benderblog-macmini
+  HostName relay.aosc.io
+  Port 24430
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -156,21 +150,21 @@ Host Estelle estelle riscv64-Estelle riscv64-estelle
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Klose klose riscv64-Klose riscv64-klose
+  HostName relay.aosc.io
+  Port 26503
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host GreenGoo greengoo riscv64-GreenGoo riscv64-greengoo
   HostName relay.aosc.io
   Port 26666
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host MagmaCube magmacube riscv64-MagmaCube riscv64-magmacube
+Host ReyDau reydau riscv64-ReyDau riscv64-reydau
   HostName relay.aosc.io
-  Port 26999
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host Yukoaioi yukoaioi loongarch64-Yukoaioi loongarch64-yukoaioi
-  HostName relay.aosc.io
-  Port 27001
+  Port 26699
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -267,18 +261,6 @@ Host Tatooine-inet tatooine-inet amd64-Tatooine-inet amd64-tatooine-inet
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host pika-inet amd64-pika-inet
-  HostName relay-inet.aosc.io
-  Port 22076
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host towards-modern-distro-inet amd64-towards-modern-distro-inet
-  HostName relay-inet.aosc.io
-  Port 22162
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Ricks-Ryzen-Box-inet ricks-ryzen-box-inet amd64-Ricks-Ryzen-Box-inet amd64-ricks-ryzen-box-inet
   HostName relay-inet.aosc.io
   Port 22238
@@ -288,6 +270,12 @@ Host Ricks-Ryzen-Box-inet ricks-ryzen-box-inet amd64-Ricks-Ryzen-Box-inet amd64-
 Host Yerus-inet yerus-inet amd64-Yerus-inet amd64-yerus-inet
   HostName relay-inet.aosc.io
   Port 22333
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Kashyyyk-inet kashyyyk-inet amd64-Kashyyyk-inet amd64-kashyyyk-inet
+  HostName relay-inet.aosc.io
+  Port 22341
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -315,27 +303,21 @@ Host Misaka23333-inet misaka23333-inet loongson3-Misaka23333-inet loongson3-misa
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Anomalocaris-inet anomalocaris-inet loongson3-Anomalocaris-inet loongson3-anomalocaris-inet
+  HostName relay-inet.aosc.io
+  Port 23464
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Resonance-inet resonance-inet loongson3-Resonance-inet loongson3-resonance-inet
   HostName relay-inet.aosc.io
   Port 23541
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host ipason-inet loongson3-ipason-inet
-  HostName relay-inet.aosc.io
-  Port 23669
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Catfish-inet catfish-inet arm64-Catfish-inet arm64-catfish-inet
   HostName relay-inet.aosc.io
   Port 24114
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host Asta-inet asta-inet arm64-Asta-inet arm64-asta-inet
-  HostName relay-inet.aosc.io
-  Port 24151
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -354,6 +336,12 @@ Host Mio-inet mio-inet arm64-Mio-inet arm64-mio-inet
 Host Dapen-inet dapen-inet arm64-Dapen-inet arm64-dapen-inet
   HostName relay-inet.aosc.io
   Port 24410
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host benderblog-macmini-inet arm64-benderblog-macmini-inet
+  HostName relay-inet.aosc.io
+  Port 24430
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -399,21 +387,21 @@ Host Estelle-inet estelle-inet riscv64-Estelle-inet riscv64-estelle-inet
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Klose-inet klose-inet riscv64-Klose-inet riscv64-klose-inet
+  HostName relay-inet.aosc.io
+  Port 26503
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host GreenGoo-inet greengoo-inet riscv64-GreenGoo-inet riscv64-greengoo-inet
   HostName relay-inet.aosc.io
   Port 26666
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host MagmaCube-inet magmacube-inet riscv64-MagmaCube-inet riscv64-magmacube-inet
+Host ReyDau-inet reydau-inet riscv64-ReyDau-inet riscv64-reydau-inet
   HostName relay-inet.aosc.io
-  Port 26999
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host Yukoaioi-inet yukoaioi-inet loongarch64-Yukoaioi-inet loongarch64-yukoaioi-inet
-  HostName relay-inet.aosc.io
-  Port 27001
+  Port 26699
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -510,18 +498,6 @@ Host Tatooine-ipv6 tatooine-ipv6 amd64-Tatooine-ipv6 amd64-tatooine-ipv6
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host pika-ipv6 amd64-pika-ipv6
-  HostName relay-ipv6.aosc.io
-  Port 22076
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host towards-modern-distro-ipv6 amd64-towards-modern-distro-ipv6
-  HostName relay-ipv6.aosc.io
-  Port 22162
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Ricks-Ryzen-Box-ipv6 ricks-ryzen-box-ipv6 amd64-Ricks-Ryzen-Box-ipv6 amd64-ricks-ryzen-box-ipv6
   HostName relay-ipv6.aosc.io
   Port 22238
@@ -531,6 +507,12 @@ Host Ricks-Ryzen-Box-ipv6 ricks-ryzen-box-ipv6 amd64-Ricks-Ryzen-Box-ipv6 amd64-
 Host Yerus-ipv6 yerus-ipv6 amd64-Yerus-ipv6 amd64-yerus-ipv6
   HostName relay-ipv6.aosc.io
   Port 22333
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Kashyyyk-ipv6 kashyyyk-ipv6 amd64-Kashyyyk-ipv6 amd64-kashyyyk-ipv6
+  HostName relay-ipv6.aosc.io
+  Port 22341
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -558,27 +540,21 @@ Host Misaka23333-ipv6 misaka23333-ipv6 loongson3-Misaka23333-ipv6 loongson3-misa
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Anomalocaris-ipv6 anomalocaris-ipv6 loongson3-Anomalocaris-ipv6 loongson3-anomalocaris-ipv6
+  HostName relay-ipv6.aosc.io
+  Port 23464
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Resonance-ipv6 resonance-ipv6 loongson3-Resonance-ipv6 loongson3-resonance-ipv6
   HostName relay-ipv6.aosc.io
   Port 23541
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host ipason-ipv6 loongson3-ipason-ipv6
-  HostName relay-ipv6.aosc.io
-  Port 23669
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Catfish-ipv6 catfish-ipv6 arm64-Catfish-ipv6 arm64-catfish-ipv6
   HostName relay-ipv6.aosc.io
   Port 24114
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host Asta-ipv6 asta-ipv6 arm64-Asta-ipv6 arm64-asta-ipv6
-  HostName relay-ipv6.aosc.io
-  Port 24151
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -597,6 +573,12 @@ Host Mio-ipv6 mio-ipv6 arm64-Mio-ipv6 arm64-mio-ipv6
 Host Dapen-ipv6 dapen-ipv6 arm64-Dapen-ipv6 arm64-dapen-ipv6
   HostName relay-ipv6.aosc.io
   Port 24410
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host benderblog-macmini-ipv6 arm64-benderblog-macmini-ipv6
+  HostName relay-ipv6.aosc.io
+  Port 24430
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -642,21 +624,21 @@ Host Estelle-ipv6 estelle-ipv6 riscv64-Estelle-ipv6 riscv64-estelle-ipv6
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Klose-ipv6 klose-ipv6 riscv64-Klose-ipv6 riscv64-klose-ipv6
+  HostName relay-ipv6.aosc.io
+  Port 26503
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host GreenGoo-ipv6 greengoo-ipv6 riscv64-GreenGoo-ipv6 riscv64-greengoo-ipv6
   HostName relay-ipv6.aosc.io
   Port 26666
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host MagmaCube-ipv6 magmacube-ipv6 riscv64-MagmaCube-ipv6 riscv64-magmacube-ipv6
+Host ReyDau-ipv6 reydau-ipv6 riscv64-ReyDau-ipv6 riscv64-reydau-ipv6
   HostName relay-ipv6.aosc.io
-  Port 26999
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host Yukoaioi-ipv6 yukoaioi-ipv6 loongarch64-Yukoaioi-ipv6 loongarch64-yukoaioi-ipv6
-  HostName relay-ipv6.aosc.io
-  Port 27001
+  Port 26699
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -753,18 +735,6 @@ Host Tatooine-cn tatooine-cn amd64-Tatooine-cn amd64-tatooine-cn
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host pika-cn amd64-pika-cn
-  HostName relay-cn.aosc.io
-  Port 22076
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host towards-modern-distro-cn amd64-towards-modern-distro-cn
-  HostName relay-cn.aosc.io
-  Port 22162
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Ricks-Ryzen-Box-cn ricks-ryzen-box-cn amd64-Ricks-Ryzen-Box-cn amd64-ricks-ryzen-box-cn
   HostName relay-cn.aosc.io
   Port 22238
@@ -774,6 +744,12 @@ Host Ricks-Ryzen-Box-cn ricks-ryzen-box-cn amd64-Ricks-Ryzen-Box-cn amd64-ricks-
 Host Yerus-cn yerus-cn amd64-Yerus-cn amd64-yerus-cn
   HostName relay-cn.aosc.io
   Port 22333
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Kashyyyk-cn kashyyyk-cn amd64-Kashyyyk-cn amd64-kashyyyk-cn
+  HostName relay-cn.aosc.io
+  Port 22341
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -801,27 +777,21 @@ Host Misaka23333-cn misaka23333-cn loongson3-Misaka23333-cn loongson3-misaka2333
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Anomalocaris-cn anomalocaris-cn loongson3-Anomalocaris-cn loongson3-anomalocaris-cn
+  HostName relay-cn.aosc.io
+  Port 23464
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Resonance-cn resonance-cn loongson3-Resonance-cn loongson3-resonance-cn
   HostName relay-cn.aosc.io
   Port 23541
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host ipason-cn loongson3-ipason-cn
-  HostName relay-cn.aosc.io
-  Port 23669
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Catfish-cn catfish-cn arm64-Catfish-cn arm64-catfish-cn
   HostName relay-cn.aosc.io
   Port 24114
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host Asta-cn asta-cn arm64-Asta-cn arm64-asta-cn
-  HostName relay-cn.aosc.io
-  Port 24151
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -840,6 +810,12 @@ Host Mio-cn mio-cn arm64-Mio-cn arm64-mio-cn
 Host Dapen-cn dapen-cn arm64-Dapen-cn arm64-dapen-cn
   HostName relay-cn.aosc.io
   Port 24410
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host benderblog-macmini-cn arm64-benderblog-macmini-cn
+  HostName relay-cn.aosc.io
+  Port 24430
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -885,21 +861,21 @@ Host Estelle-cn estelle-cn riscv64-Estelle-cn riscv64-estelle-cn
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Klose-cn klose-cn riscv64-Klose-cn riscv64-klose-cn
+  HostName relay-cn.aosc.io
+  Port 26503
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host GreenGoo-cn greengoo-cn riscv64-GreenGoo-cn riscv64-greengoo-cn
   HostName relay-cn.aosc.io
   Port 26666
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host MagmaCube-cn magmacube-cn riscv64-MagmaCube-cn riscv64-magmacube-cn
+Host ReyDau-cn reydau-cn riscv64-ReyDau-cn riscv64-reydau-cn
   HostName relay-cn.aosc.io
-  Port 26999
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host Yukoaioi-cn yukoaioi-cn loongarch64-Yukoaioi-cn loongarch64-yukoaioi-cn
-  HostName relay-cn.aosc.io
-  Port 27001
+  Port 26699
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -996,18 +972,6 @@ Host Tatooine-cn-ipv6 tatooine-cn-ipv6 amd64-Tatooine-cn-ipv6 amd64-tatooine-cn-
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host pika-cn-ipv6 amd64-pika-cn-ipv6
-  HostName relay-cn-ipv6.aosc.io
-  Port 22076
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host towards-modern-distro-cn-ipv6 amd64-towards-modern-distro-cn-ipv6
-  HostName relay-cn-ipv6.aosc.io
-  Port 22162
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Ricks-Ryzen-Box-cn-ipv6 ricks-ryzen-box-cn-ipv6 amd64-Ricks-Ryzen-Box-cn-ipv6 amd64-ricks-ryzen-box-cn-ipv6
   HostName relay-cn-ipv6.aosc.io
   Port 22238
@@ -1017,6 +981,12 @@ Host Ricks-Ryzen-Box-cn-ipv6 ricks-ryzen-box-cn-ipv6 amd64-Ricks-Ryzen-Box-cn-ip
 Host Yerus-cn-ipv6 yerus-cn-ipv6 amd64-Yerus-cn-ipv6 amd64-yerus-cn-ipv6
   HostName relay-cn-ipv6.aosc.io
   Port 22333
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Kashyyyk-cn-ipv6 kashyyyk-cn-ipv6 amd64-Kashyyyk-cn-ipv6 amd64-kashyyyk-cn-ipv6
+  HostName relay-cn-ipv6.aosc.io
+  Port 22341
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -1044,27 +1014,21 @@ Host Misaka23333-cn-ipv6 misaka23333-cn-ipv6 loongson3-Misaka23333-cn-ipv6 loong
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Anomalocaris-cn-ipv6 anomalocaris-cn-ipv6 loongson3-Anomalocaris-cn-ipv6 loongson3-anomalocaris-cn-ipv6
+  HostName relay-cn-ipv6.aosc.io
+  Port 23464
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Resonance-cn-ipv6 resonance-cn-ipv6 loongson3-Resonance-cn-ipv6 loongson3-resonance-cn-ipv6
   HostName relay-cn-ipv6.aosc.io
   Port 23541
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host ipason-cn-ipv6 loongson3-ipason-cn-ipv6
-  HostName relay-cn-ipv6.aosc.io
-  Port 23669
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Catfish-cn-ipv6 catfish-cn-ipv6 arm64-Catfish-cn-ipv6 arm64-catfish-cn-ipv6
   HostName relay-cn-ipv6.aosc.io
   Port 24114
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host Asta-cn-ipv6 asta-cn-ipv6 arm64-Asta-cn-ipv6 arm64-asta-cn-ipv6
-  HostName relay-cn-ipv6.aosc.io
-  Port 24151
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -1083,6 +1047,12 @@ Host Mio-cn-ipv6 mio-cn-ipv6 arm64-Mio-cn-ipv6 arm64-mio-cn-ipv6
 Host Dapen-cn-ipv6 dapen-cn-ipv6 arm64-Dapen-cn-ipv6 arm64-dapen-cn-ipv6
   HostName relay-cn-ipv6.aosc.io
   Port 24410
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host benderblog-macmini-cn-ipv6 arm64-benderblog-macmini-cn-ipv6
+  HostName relay-cn-ipv6.aosc.io
+  Port 24430
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -1128,21 +1098,21 @@ Host Estelle-cn-ipv6 estelle-cn-ipv6 riscv64-Estelle-cn-ipv6 riscv64-estelle-cn-
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host Klose-cn-ipv6 klose-cn-ipv6 riscv64-Klose-cn-ipv6 riscv64-klose-cn-ipv6
+  HostName relay-cn-ipv6.aosc.io
+  Port 26503
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host GreenGoo-cn-ipv6 greengoo-cn-ipv6 riscv64-GreenGoo-cn-ipv6 riscv64-greengoo-cn-ipv6
   HostName relay-cn-ipv6.aosc.io
   Port 26666
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host MagmaCube-cn-ipv6 magmacube-cn-ipv6 riscv64-MagmaCube-cn-ipv6 riscv64-magmacube-cn-ipv6
+Host ReyDau-cn-ipv6 reydau-cn-ipv6 riscv64-ReyDau-cn-ipv6 riscv64-reydau-cn-ipv6
   HostName relay-cn-ipv6.aosc.io
-  Port 26999
-  User root
-  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
-  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
-Host Yukoaioi-cn-ipv6 yukoaioi-cn-ipv6 loongarch64-Yukoaioi-cn-ipv6 loongarch64-yukoaioi-cn-ipv6
-  HostName relay-cn-ipv6.aosc.io
-  Port 27001
+  Port 26699
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
@@ -1223,7 +1193,6 @@ Host Misaka23333-direct misaka23333-direct loongson3-Misaka23333-direct loongson
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Resonance-direct resonance-direct loongson3-Resonance-direct loongson3-resonance-direct
   HostName home.biscuit.moe
-  AddressFamily inet
   Port 23541
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
@@ -1238,6 +1207,12 @@ Host kp920-direct arm64-kp920-direct
 Host eleventh-direct arm64-eleventh-direct
   HostName 192.168.1.11
   ProxyJump aosc-build@hw-hk.innull.com:20022
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host ReyDau-direct reydau-direct riscv64-ReyDau-direct riscv64-reydau-direct
+  HostName home.biscuit.moe
+  Port 26699
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
