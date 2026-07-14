@@ -5,13 +5,10 @@
 
 Collection of buildbot configurations for AOSC OS maintainers. This repo contains [`ssh_config`](https://man.openbsd.org/ssh_config) and [`ssh_known_hosts`](https://man.openbsd.org/sshd.8#SSH_KNOWN_HOSTS_FILE_FORMAT) files of them, for developers' convenience. Repo server's SSH key fingerprints are also included in `ssh_known_hosts`.
 
-There are two relay servers available, one in Washington (WA), one in Shanghai. But there are five IP addresses, each suitable for different network environments. Note that `<text inside angle brackets>` indicates placeholder for which you must supply a value.
+There are two relay servers available, one in Washington (WA), one in Hebei. Note that `<text inside angle brackets>` indicates placeholder for which you must supply a value.
 
-- `relay.aosc.io`: IPv4 only, routed via [Microsoft global network](https://learn.microsoft.com/azure/networking/microsoft-global-network), **developers outside of China** should choose this. Connect to this server with `ssh <buildbot>`.
-- `relay-ipv6.aosc.io`: IPv6 only, routed via Microsoft global network, **developers outside of China with IPv6** should choose this. Connect to this server with `ssh <buildbot>-ipv6`.
-- `relay-cn.aosc.io`: IPv4 only, routed via Microsoft global network, **developers in China** should choose this. Connect to this server with `ssh <buildbot>-cn`.
-- `relay-cn-ipv6.aosc.io`: IPv6 only, routed via Microsoft global network, **developers in China with IPv6** should choose this. Connect to this server with `ssh <buildbot>-cn-ipv6`.
-- `relay-inet.aosc.io`: IPv4 only, [routed over public Internet (ISP network)](https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview#routing-over-public-internet-isp-network), **suitable for only specific cases**, such as outage with Microsoft global network. Connect to this server with `ssh <buildbot>-inet`.
+- `relay.aosc.io`: **Developers outside of China** should choose this. Connect to this server with `ssh <buildbot>`.
+- `relay-cn.aosc.io`: **Developers in China** should choose this. Connect to this server with `ssh <buildbot>-cn`.
 
 Some but not all buildbots are directly accessible from public Internet. These configurations are also included. Works best if the developer is geographically (and digitally) nearby. Connect with `ssh <buildbot>-direct`.
 
