@@ -84,6 +84,12 @@ Host Catfish catfish arm64-Catfish arm64-catfish
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host FatAilurus fatailurus arm64-FatAilurus arm64-fatailurus
+  HostName relay.aosc.io
+  Port 24115
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
 Host Zinfandel zinfandel arm64-Zinfandel arm64-zinfandel
   HostName relay.aosc.io
   Port 24222
@@ -324,6 +330,12 @@ Host Resonance-cn resonance-cn loongson3-Resonance-cn loongson3-resonance-cn
 Host Catfish-cn catfish-cn arm64-Catfish-cn arm64-catfish-cn
   HostName relay-cn.aosc.io
   Port 24114
+  User root
+  UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
+  GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
+Host FatAilurus-cn fatailurus-cn arm64-FatAilurus-cn arm64-fatailurus-cn
+  HostName relay-cn.aosc.io
+  Port 24115
   User root
   UserKnownHostsFile ~/.ssh/known_hosts ~/.ssh/known_hosts2 ~/.ssh/known_hosts.d/aosc
   GlobalKnownHostsFile /etc/ssh/ssh_known_hosts /etc/ssh/ssh_known_hosts2 /etc/ssh/ssh_known_hosts.d/aosc __PROGRAMDATA__\ssh\ssh_known_hosts __PROGRAMDATA__\ssh\ssh_known_hosts2 __PROGRAMDATA__\ssh\ssh_known_hosts.d\aosc
